@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class ="logo"> Liang Jia Xiong </div>
+        <div
+            <Ul class = "nav-links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#experience"> Experience</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#contact"> Contact</a></li>
+            </Ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class ="logo"> Liang Jia Xiong </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick = "toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick = "toggleMenu()"> About</a></li>
+                <li><a href="#experience" onclick = "toggleMenu()"> Experience</a></li>
+                <li><a href="#projects" onclick = "toggleMenu()"> Projects </a></li>
+                <li><a href="#contact" onclick = "toggleMenu()"> Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/liang.jpeg" alt="Liang profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Liang Jia Xiong</h1>
+            <p class="section_text_p2">Recent Aerospace Graduates</p>
+            <div class="btn-container">
+                <button class="btn btn-color" onclick="window.open('./assets/Liang_resume.pdf')">download cv</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedIn profile"class="icon" onclick="location.href='https://www.linkedin.com/in/liang06/'">
+                <img src="./assets/github.png" alt="My Github profile"class="icon" onclick="location.href='https://github.com/Jiaxiong1206'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text_p1">Get to know more</p>
+        <p class="title">About me</p>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about_me.jpg" alt="Profile Picture" class="about pic"> 
+            </div>
+            <div class="about-detail-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3 months of <br> NPI intern</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Engineering (Honours) <br> Aerospace Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="p1">
+                        I am a motivated and self-taught aspiring Data Analyst with a passion for turning raw data into actionable insights. My journey into data analytics is driven by curiosity and a love for problem-solving. I am currently honing my skills in Python, SQL, and data visualization tools, and actively applying them to projects that demonstrate real-world applications.
+                        I thrive on analyzing complex datasets, uncovering trends, and creating clear, impactful visualizations that inform decision-making. With a strong commitment to continuous learning, I aim to build a career where I can tell story from extracting information from raw data.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">IT skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>
+                                    Microsoft office suite <br>
+                                    (Office, Excel and PowerPoint)
+                                </h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>
+                                    Python <br>
+                                    (Numpy, Pandas, Matplotlib, Seaborn)
+                                </h3>
+                                <p>Familiar</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>
+                                    CAD software <br>
+                                    (Solidworks and CATIAV5)
+                                </h3>
+                                <p>Familiar</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>
+                                    SQL
+                                </h3>
+                                <p>Familiar</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>
+                                    Tableau
+                                </h3>
+                                <p>Familiar</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>
+                                    Matlab
+                                </h3>
+                                <p>Familiar</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">See my recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/coronavirus.jpg" alt="Project 1" class="Project-img">
+                    <h2 class="experience-sub-title project-title">Project One <br class="p1">SQL Analysis and Tableau Visualization of COVID-19 Dataset</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Jiaxiong1206/Portfolio_project/blob/main/Covid.sql'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://public.tableau.com/app/profile/liang.jia.xiong/viz/Covid_Dashboard_2021_17354586672900/Dashboard1'">
+                            Tableau
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/housing.jpeg" alt="Project 2" class="Project-img">
+                    <h2 class="experience-sub-title project-title">Project Two <br class="p1">Data Cleaning and Transformation of Housing Dataset in SQL</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn2" onclick="location.href='https://github.com/Jiaxiong1206/Portfolio_project/blob/main/Housing_Data.sql'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/movie.jpg" alt="Project 3" class="Project-img">
+                    <h2 class="experience-sub-title project-title">Project Three <br class="p1">Data Cleaning and Exploratory Data Analysis of Movie Dataset Using Python</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn2" onclick="location.href='https://github.com/Jiaxiong1206/Portfolio_project/blob/main/Movie_correlation_project.ipynb'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#more'">
+    </section>
+    <section id="more">
+        <div class="experience-details-container">
+            <p class="section_text_p1">Take a look at</p>
+            <h1 class="title">School Projects</h1>
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/Quadcopter.png" alt="FYP project" class="Project-img">
+                    <h2 class="experience-sub-title project-title">FYP project <br class="p1">CFD Analysis on Quadcopter</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn1" onclick="window.open('./assets/152028_endorsed_thesis.pdf')">
+                            Download thesis
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/Calc_application.png" alt="High speed project" class="Project-img">
+                    <h2 class="experience-sub-title project-title">High Speed Aerodynamic Project <br class="p1">Calculator Application for High Speed Aerodynamic Problems</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn2" onclick="location.href='https://github.com/Jiaxiong1206/School-Projects/tree/main/new'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-containers">
+                    <img src="./assets/motion_detection.png" alt="Mechatronic Project" class="Project-img">
+                    <h2 class="experience-sub-title project-title">Mechatronic Project<br class="p1">Motion detection system</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn2" onclick="location.href='https://github.com/Jiaxiong1206/School-Projects/tree/main/Motion%20detection%20system'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text_p1">Let's Get in Touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:jiaxiong.liang8@gmail.com">jiaxiong.liang8@gmail.com</a></p>
+            </div>
+        
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/liang06/">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#experience"> Experience</a></li>
+                    <li><a href="#projects"> Projects</a></li>
+                    <li><a href="#contact"> Contact</a></li> 
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Liang Jia Xiong. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
